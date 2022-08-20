@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ressources/css/cheatsheet.css" />
+    <title>HTML & CSS Cheat Sheet</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+      </nav>
+    </header>
+    <main>
+      <h1>HTML & CSS Cheat Sheet</h1>
+      <section id="html">
+        <h2>HTML</h2>
+        <div class="subject">
+          <h3>Table Tags</h3>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="code">&lt;table&gt;</span></td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;thead&gt;</span></td>
+                <td>Table Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;tbody&gt;</span></td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;tr&gt;</span></td>
+                <td>Table Row</td>
+                <td>The table row container.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;td&gt;</span></td>
+                <td>Table Data</td>
+                <td>The table data container.</td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;tfoot&gt;</span></td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="subject">
+          <h3>Semantic HTML</h3>
+          <p>
+            These are some of the roughly 100 semantic
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              target="_blank"
+              >elements</a
+            >
+            available:
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="code">&lt;header&gt;</span></td>
+                <td>
+                  Represents introductory content, typically a group of
+                  introductory or navigational aids. It may contain some heading
+                  elements but also a logo, a search form, an author name, and
+                  other elements.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;nav&gt;</span></td>
+                <td>
+                  Represents a section of a page whose purpose is to provide
+                  navigation links, either within the current document or to
+                  other documents. Common examples of navigation sections are
+                  menus, tables of contents, and indexes.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;main&gt;</span></td>
+                <td>
+                  Represents the dominant content of the
+                  <span class="code">&lt;body&gt;</span> of a document. The main
+                  content area consists of content that is directly related to
+                  or expands upon the central topic of a document, or the
+                  central functionality of an application.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;section&gt;</span></td>
+                <td>
+                  Represents a generic standalone section of a document, which
+                  doesn't have a more specific semantic element to represent it.
+                  Sections should always have a heading, with very few
+                  exceptions.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;article&gt;</span></td>
+                <td>
+                  Represents a self-contained composition in a document, page,
+                  application, or site, which is intended to be independently
+                  distributable or reusable (e.g., in syndication). Examples
+                  include: a forum post, a magazine or newspaper article, or a
+                  blog entry, a product card, a user-submitted comment, an
+                  interactive widget or gadget, or any other independent item of
+                  content.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;aside&gt;</span></td>
+                <td>
+                  Represents a portion of a document whose content is only
+                  indirectly related to the document's main content. Asides are
+                  frequently presented as sidebars or call-out boxes.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;figure&gt;</span></td>
+                <td>
+                  Represents self-contained content, potentially with an
+                  optional caption, which is specified using the
+                  &lt;figcaption&gt; element. The figure, its caption, and its
+                  contents are referenced as a single unit.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;figcaption&gt;</span></td>
+                <td>
+                  Represents a caption or legend describing the rest of the
+                  contents of its parent &lt;figure&gt; element.
+                </td>
+              </tr>
+              <tr>
+                <td><span class="code">&lt;footer&gt;</span></td>
+                <td>
+                  Represents a footer for its nearest ancestor sectioning
+                  content or sectioning root element. It typically contains
+                  information about the author of the section, copyright data or
+                  links to related documents.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="css">
+        <h2>CSS</h2>
+        <div class="subject">
+          <h3>Box Model</h3>
+          <p>
+            The size and position of an element are often impacted by its
+            containing block. Most often, the containing block is the content
+            area of an element's nearest block-level ancestor, but this is not
+            always the case. In this article, we examine the factors that
+            determine an element's containing block.
+          </p>
+          <p>
+            When a user agent (such as your browser) lays out a document, it
+            generates a box for every element. Each box is divided into four
+            areas:
+          </p>
+          <ol>
+            <li>Content area</li>
+            <li>Padding area</li>
+            <li>Border area</li>
+            <li>Margin area</li>
+          </ol>
+          <img src="./images/box-model.png" alt="Picture of the box model" />
+        </div>
+        <div class="subject">
+          <h3>Selectors</h3>
+          <p>
+            CSS selectors define the elements to which a set of CSS rules apply.
+          </p>
+          <div class="sub-subject">
+            <h4>Basic selectors</h4>
+            <ul>
+              <li>Universal selector : Selects all elements.</li>
+              <p>Syntax: <span class="code">*</span></p>
+              <li>
+                Type selector : Selects all elements that have the given node
+                name.
+              </li>
+              <p>Syntax: <span class="code">elementname</span></p>
+              <li>
+                Class selector : Selects all elements that have the given.<span
+                  class="code"
+                  >class</span
+                >
+                attribute.
+              </li>
+              <p>Syntax: <span class="code">.classname</span></p>
+              <li>
+                ID selector : Selects an element based on the value of its
+                <span class="code">id</span> attribute. There should be only one
+                element with a given ID in a document.
+              </li>
+              <p>Syntax: <span class="code">#idname</span></p>
+              <li>
+                Attribute selector : Selects all elements that have the given
+                attribute.
+              </li>
+              <p>
+                Syntax: <span class="code">[attr]</span>
+                <span class="code">[attr=value]</span>
+                <span class="code">[attr~=value]</span>
+                <span class="code">[attr|=value]</span>
+                <span class="code">[attr^=value]</span>
+                <span class="code">[attr$=value]</span>
+                <span class="code">[attr*=value]</span>
+              </p>
+            </ul>
+          </div>
+          <div class="sub-subject">
+            <h4>Grouping selectors</h4>
+            <ul>
+              <li>
+                Selector list : The <span class="code">,</span> selector is a
+                grouping method that selects all the matching nodes.
+              </li>
+              <p>Syntax: <span class="code">A, B</span></p>
+            </ul>
+          </div>
+          <div class="sub-subject">
+            <h4>Combinators</h4>
+            <ul>
+              <li>
+                Descendant combinator : The
+                <span class="code">" "</span> (space) combinator selects nodes
+                that are descendants of the first element.
+              </li>
+              <p>Syntax: <span class="code">A B</span></p>
+              <li>
+                Child combinator : The
+                <span class="code">&gt;</span> combinator selects nodes that are
+                direct children of the first element.
+              </li>
+              <p>Syntax: <span class="code">A &gt; B</span></p>
+              <li>
+                General sibling combinator : The
+                <span class="code">~</span> combinator selects siblings. This
+                means that the second element follows the first (though not
+                necessarily immediately), and both share the same parent.
+              </li>
+              <p>Syntax: <span class="code">A ~ B</span></p>
+              <li>
+                Adjacent sibling combinator : The
+                <span class="code">+</span> combinator matches the second
+                element only if it immediately follows the first element.
+              </li>
+              <p>Syntax: <span class="code">A + B</span></p>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
